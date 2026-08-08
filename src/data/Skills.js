@@ -11,7 +11,7 @@ export const skills = [
     ],
   },
 
-  {
+  { 
     category: "Backend",
     description: "Developing APIs and server-side applications.",
     skills: [

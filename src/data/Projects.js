@@ -6,7 +6,7 @@ export const projects = [
     image: "/projects/baogram.png",
     technologies: [
       "React",
-      "Node.js",
+      "Node.js", 
       "Express.js",
       "MongoDB",
     ],
