@@ -1,3 +1,4 @@
+import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
@@ -11,6 +12,7 @@ import Skills from "./sections/Skills";
 function App() {
   return (
     <>
+      <Background />
       <Navbar />
 
       <main className="pt-16">

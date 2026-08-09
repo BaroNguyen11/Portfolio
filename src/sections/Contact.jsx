@@ -1,7 +1,18 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { useState } from "react";
+import { Github, Linkedin, Mail, Copy, Check } from "lucide-react";
 import { motion } from "motion/react";
 
 const Contact = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("bao927471@gmail.com");
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  };
+
   return (
     <section
       id="contact"
@@ -29,23 +40,43 @@ const Contact = () => {
             the links below.
           </p>
 
-          {/* Email */} 
+          {/* Email Actions */}
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=bao927471@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg bg-violet-600 px-5 py-3 text-sm font-medium text-white transition-colors duration-200 ease-out hover:bg-violet-500"
+            >
+              <Mail size={17} />
+              Get In Touch
+            </a>
 
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=bao927471@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mx-auto mt-8 inline-flex items-center gap-2 rounded-lg bg-violet-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-violet-500"
-          >
-            <Mail size={17} />
-            Get In Touch
-          </a>
+            <button
+              type="button"
+              onClick={handleCopyEmail}
+              className="relative inline-flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/40 px-5 py-3 text-sm font-medium text-zinc-300 transition-[border-color,color,background-color] duration-200 ease-out hover:border-zinc-700 hover:text-white hover:bg-zinc-900/80 cursor-pointer"
+            >
+              {copied ? (
+                <>
+                  <Check size={17} className="text-emerald-400" />
+                  <span className="text-emerald-400">Email Copied!</span>
+                </>
+              ) : (
+                <>
+                  <Copy size={17} />
+                  <span>Copy Email Address</span>
+                </>
+              )}
+            </button>
+          </div>
+
           {/* Social */}
           <div className="mt-8 flex justify-center gap-5">
             <a
               href="https://github.com/BaroNguyen11"
               aria-label="GitHub"
-              className="text-zinc-500 transition hover:text-white"
+              className="text-zinc-500 transition-colors duration-200 ease-out hover:text-white"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -55,7 +86,7 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/nguy%E1%BB%85n-v%C4%83n-b%E1%BA%A3o-undefined-3bba0a372/"
               aria-label="LinkedIn"
-              className="text-zinc-500 transition hover:text-white"
+              className="text-zinc-500 transition-colors duration-200 ease-out hover:text-white"
               target="_blank"
               rel="noopener noreferrer"
             >

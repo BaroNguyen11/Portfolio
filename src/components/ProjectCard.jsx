@@ -11,17 +11,17 @@ const ProjectCard = ({ project, index }) => {
         duration: 0.5,
         delay: index * 0.1,
       }}
-      className="group overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40 transition hover:-translate-y-1 hover:border-zinc-700"
+      className="group overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-zinc-700 hover:shadow-lg hover:shadow-violet-600/5"
     >
       {/* Project preview */}
       <div className="relative aspect-video overflow-hidden bg-zinc-950">
         <img
           src={project.image}
           alt={`${project.title} project preview`}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-102"
         />
 
-        <div className="absolute inset-0 bg-black/0 transition duration-300 group-hover:bg-black/20" />
+        <div className="absolute inset-0 bg-black/0 transition-colors duration-300 ease-out group-hover:bg-black/20" />
       </div>
 
       {/* Content */}
@@ -54,7 +54,7 @@ const ProjectCard = ({ project, index }) => {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-zinc-400 transition hover:text-white"
+              className="inline-flex items-center gap-2 text-sm text-zinc-400 transition-colors duration-200 ease-out hover:text-white"
             >
               <Github size={17} />
               GitHub
@@ -67,7 +67,7 @@ const ProjectCard = ({ project, index }) => {
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-zinc-400 transition hover:text-white"
+              className="inline-flex items-center gap-2 text-sm text-zinc-400 transition-colors duration-200 ease-out hover:text-white"
             >
               <ExternalLink size={17} />
               Live Demo

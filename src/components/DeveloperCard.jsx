@@ -8,15 +8,21 @@ const DeveloperCard = () => {
       <div className="absolute -inset-4 rounded-3xl bg-violet-600/10 blur-3xl" />
 
       {/* Card */}
-      <div className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/80 shadow-2xl">
+      <div className="relative overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-900/50 backdrop-blur-md shadow-2xl">
 
-        {/* Window header */}
-        <div className="flex items-center gap-2 border-b border-zinc-800 px-5 py-4">
-          <span className="h-3 w-3 rounded-full bg-zinc-700" />
-          <span className="h-3 w-3 rounded-full bg-zinc-700" />
-          <span className="h-3 w-3 rounded-full bg-zinc-700" />
+        {/* Header with status */}
+        <div className="flex items-center justify-between border-b border-zinc-800/80 px-6 py-4">
+          <div className="flex items-center gap-2">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span className="text-xs font-medium text-zinc-400">
+              Available for work
+            </span>
+          </div>
 
-          <span className="ml-3 text-xs text-zinc-500">
+          <span className="font-mono text-xs text-zinc-500">
             developer.js
           </span>
         </div>

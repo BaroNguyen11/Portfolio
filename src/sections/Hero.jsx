@@ -3,6 +3,16 @@ import { motion } from "motion/react";
 import DeveloperCard from "../components/DeveloperCard";
 
 const Hero = () => {
+  const scrollToSection = (id) => {
+    const section = document.querySelector(id);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
   return (
     <section
       id="home"
@@ -54,8 +64,8 @@ const Hero = () => {
             className="mt-6 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg"
           >
             I'm an IT student focused on fullstack web development, building
-            projects with React, Java, Spring Boot, Node.js, and modern
-            database technologies.
+            projects with React, Java, Spring Boot, Node.js, and modern database
+            technologies.
           </motion.p>
 
           {/* Buttons */}
@@ -67,6 +77,10 @@ const Hero = () => {
           >
             <a
               href="#projects"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#projects");
+              }}
               className="inline-flex items-center gap-2 rounded-lg bg-violet-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-violet-500"
             >
               View Projects
@@ -75,6 +89,10 @@ const Hero = () => {
 
             <a
               href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#contact");
+              }}
               className="rounded-lg border border-zinc-700 px-5 py-3 text-sm font-medium text-zinc-300 transition hover:border-zinc-500 hover:text-white"
             >
               Contact Me
