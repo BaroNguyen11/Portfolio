@@ -33,24 +33,42 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6 }}
+            className="max-w-2xl"
           >
-            <p className="text-lg leading-8 text-zinc-300">
-              I'm an IT student with a strong interest in fullstack web
-              development. I enjoy learning how modern web applications are
-              designed, built, and connected from frontend to backend.
+            <p className="text-xl leading-8 text-zinc-300">
+              I'm an IT student focused on becoming a
+              <span className="font-medium text-white">
+                {" "}
+                Fullstack Developer.
+              </span>
             </p>
 
             <p className="mt-6 text-base leading-7 text-zinc-500">
-              I enjoy working with both frontend and backend technologies,
-              from building responsive interfaces with React to developing
-              APIs and business logic with Java, Spring Boot, and Node.js.
+              I enjoy turning ideas into working applications — from designing
+              interfaces with React to building APIs and backend systems with
+              Java, Spring Boot, and Node.js.
             </p>
 
             <p className="mt-6 text-base leading-7 text-zinc-500">
-              Most of my experience comes from coursework and personal
-              projects, where I continuously practice software development,
-              database design, API integration, and application architecture.
+              Most of my experience comes from personal projects and university
+              coursework. I'm currently focusing on improving my backend
+              knowledge, software architecture, and the way I design and build
+              production-ready applications.
             </p>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <span className="rounded-full border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-sm text-zinc-400">
+                Fullstack Development
+              </span>
+
+              <span className="rounded-full border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-sm text-zinc-400">
+                Backend
+              </span>
+
+              <span className="rounded-full border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-sm text-zinc-400">
+                Software Architecture
+              </span>
+            </div>
           </motion.div>
 
           {/* Highlights */}
@@ -65,9 +83,7 @@ const About = () => {
             <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 transition-colors hover:border-zinc-700">
               <GraduationCap size={24} className="text-violet-400" />
 
-              <h3 className="mt-4 font-semibold text-white">
-                Education
-              </h3>
+              <h3 className="mt-4 font-semibold text-white">Education</h3>
 
               <p className="mt-2 text-sm leading-6 text-zinc-500">
                 Industrial University of Ho Chi Minh City

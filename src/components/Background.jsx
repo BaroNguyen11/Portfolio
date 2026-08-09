@@ -29,7 +29,7 @@ const Background = () => {
         style={{
           background: `
             radial-gradient(
-              circle 200px at ${mouse.x}% ${mouse.y}%,
+              circle 100px at ${mouse.x}% ${mouse.y}%,
               rgba(139, 92, 246, 0.18),
               transparent 70%
             )
