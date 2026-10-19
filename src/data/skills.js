@@ -18,6 +18,7 @@ import {
   SiSupabase,
   SiPostman,
   SiIntellijidea,
+  SiPostgresql
 } from "react-icons/si";
 import { BiLogoVisualStudio } from "react-icons/bi";
 
@@ -72,6 +73,7 @@ export const skills = [
       { name: "MySQL", icon: SiMysql, color: "#4479A1" },
       { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
       { name: "Supabase", icon: SiSupabase, color: "#3ECF8E" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "#61DAFB" },
     ],
   },
 

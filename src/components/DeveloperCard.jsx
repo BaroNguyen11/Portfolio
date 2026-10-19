@@ -31,9 +31,7 @@ const DeveloperCard = () => {
         <div className="space-y-5 p-6 font-mono text-sm">
 
           <div>
-            <p className="text-zinc-500">
-              01
-            </p>
+          
 
             <p>
               <span className="text-violet-400">const</span>{" "}
@@ -69,10 +67,6 @@ const DeveloperCard = () => {
           </div>
 
           <div>
-            <p className="text-zinc-500">
-              06
-            </p>
-
             <p>{"};"}</p>
           </div>
 
