@@ -30,33 +30,23 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 150;
+    const sections = navItems
+      .map((item) => document.querySelector(item.href))
+      .filter(Boolean);
 
-      let currentSection = "#home";
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive("#" + entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+    );
 
-      navItems.forEach((item) => {
-        const section = document.querySelector(item.href);
-
-        if (!section) return;
-
-        if (section.offsetTop <= scrollPosition) {
-          currentSection = item.href;
-        }
-      });
-
-      setActive(currentSection);
-    };
-
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll, {
-      passive: true,
-    });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
   }, []);
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-zinc-900 bg-zinc-950/80 backdrop-blur-md">
@@ -70,7 +60,7 @@ const Navbar = () => {
             handleNavClick("#home");
           }}
         >
-          BAO<span className="text-violet-500">.</span>
+          BAO<span className="text-emerald-500">.</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -95,7 +85,7 @@ const Navbar = () => {
                 {isActive && (
                   <motion.span
                     layoutId="activeNav"
-                    className="absolute -bottom-1 left-0 h-0.5 w-full rounded-full bg-violet-500"
+                    className="absolute -bottom-1 left-0 h-0.5 w-full rounded-full bg-emerald-500"
                     transition={{
                       type: "spring",
                       stiffness: 500,

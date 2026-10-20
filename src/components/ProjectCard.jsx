@@ -11,7 +11,7 @@ const ProjectCard = ({ project, index }) => {
         duration: 0.5,
         delay: index * 0.1,
       }}
-      className="group overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-zinc-700 hover:shadow-lg hover:shadow-violet-600/5"
+      className="group overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-zinc-700 hover:shadow-lg hover:shadow-emerald-600/5"
     >
       {/* Project preview */}
       <div className="relative aspect-video overflow-hidden bg-zinc-950">

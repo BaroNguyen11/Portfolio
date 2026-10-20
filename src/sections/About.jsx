@@ -16,10 +16,6 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-violet-400">
-            About Me
-          </p>
-
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             A little bit about me
           </h2>
@@ -81,7 +77,7 @@ const About = () => {
           >
             {/* Education */}
             <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 transition-colors hover:border-zinc-700">
-              <GraduationCap size={24} className="text-violet-400" />
+              <GraduationCap size={24} className="text-emerald-400" />
 
               <h3 className="mt-4 font-semibold text-white">Education</h3>
 
@@ -92,7 +88,7 @@ const About = () => {
 
             {/* Development */}
             <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 transition-colors hover:border-zinc-700">
-              <Code2 size={24} className="text-violet-400" />
+              <Code2 size={24} className="text-emerald-400" />
 
               <h3 className="mt-4 font-semibold text-white">
                 Fullstack Development
@@ -105,7 +101,7 @@ const About = () => {
 
             {/* Currently Learning */}
             <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 transition-colors hover:border-zinc-700">
-              <Rocket size={24} className="text-violet-400" />
+              <Rocket size={24} className="text-emerald-400" />
 
               <h3 className="mt-4 font-semibold text-white">
                 Currently Learning

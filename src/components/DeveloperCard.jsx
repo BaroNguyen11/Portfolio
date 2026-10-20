@@ -5,7 +5,7 @@ const DeveloperCard = () => {
     <div className="relative w-full max-w-md">
 
       {/* Glow */}
-      <div className="absolute -inset-4 rounded-3xl bg-violet-600/10 blur-3xl" />
+      <div className="absolute -inset-4 rounded-3xl bg-emerald-600/10 blur-3xl" />
 
       {/* Card */}
       <div className="relative overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-900/50 backdrop-blur-md shadow-2xl">
@@ -34,7 +34,7 @@ const DeveloperCard = () => {
           
 
             <p>
-              <span className="text-violet-400">const</span>{" "}
+              <span className="text-emerald-400">const</span>{" "}
               <span className="text-blue-300">developer</span>{" "}
               = {"{"}
             </p>
@@ -78,7 +78,7 @@ const DeveloperCard = () => {
           <div className="flex flex-col items-center gap-2 p-5">
             <Code2
               size={20}
-              className="text-violet-400"
+              className="text-emerald-400"
             />
 
             <span className="text-xs text-zinc-500">
@@ -89,7 +89,7 @@ const DeveloperCard = () => {
           <div className="flex flex-col items-center gap-2 border-x border-zinc-800 p-5">
             <Server
               size={20}
-              className="text-violet-400"
+              className="text-emerald-400"
             />
 
             <span className="text-xs text-zinc-500">
@@ -100,7 +100,7 @@ const DeveloperCard = () => {
           <div className="flex flex-col items-center gap-2 p-5">
             <Database
               size={20}
-              className="text-violet-400"
+              className="text-emerald-400"
             />
 
             <span className="text-xs text-zinc-500">

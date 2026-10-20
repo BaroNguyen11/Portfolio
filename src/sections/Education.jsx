@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="border-t border-zinc-800/60 py-24"
+      className="scroll-mt-20 border-t border-zinc-900 py-24"
     >
       <div className="mx-auto max-w-6xl px-6">
 
@@ -17,10 +17,6 @@ const Education = () => {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-violet-400">
-            Education
-          </p>
-
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             My education
           </h2>
@@ -40,21 +36,21 @@ const Education = () => {
           className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 sm:p-8"
         >
           {/* Decorative glow */}
-          <div className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-violet-600/10 blur-3xl" />
+          <div className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-emerald-600/10 blur-3xl" />
 
           <div className="relative flex flex-col gap-6 sm:flex-row sm:items-start">
 
             {/* Icon */}
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-violet-500/10">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10">
               <GraduationCap
                 size={28}
-                className="text-violet-400"
+                className="text-emerald-400"
               />
             </div>
 
             {/* Content */}
             <div>
-              <p className="text-sm font-medium text-violet-400">
+              <p className="text-sm font-medium text-emerald-400">
                 2023 — Present
               </p>
 

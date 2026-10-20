@@ -31,7 +31,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/nguy%E1%BB%85n-v%C4%83n-b%E1%BA%A3o-undefined-3bba0a372/"
+            href="https://www.linkedin.com/in/nguyen-van-bao-3bba0a372/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"

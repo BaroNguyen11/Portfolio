@@ -17,10 +17,6 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-violet-400">
-            Projects
-          </p>
-
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Things I've built
           </h2>

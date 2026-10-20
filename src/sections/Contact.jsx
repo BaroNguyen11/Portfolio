@@ -26,7 +26,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-violet-400">
+          <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-emerald-400">
             Contact
           </p>
 
@@ -35,9 +35,7 @@ const Contact = () => {
           </h2>
 
           <p className="mt-5 leading-7 text-zinc-500">
-            I'm currently focused on improving my skills and building fullstack
-            projects. If you'd like to connect, feel free to reach out through
-            the links below.
+            I'm building fullstack projects and always happy to connect. Reach me through the links below.
           </p>
 
           {/* Email Actions */}
@@ -46,16 +44,16 @@ const Contact = () => {
               href="https://mail.google.com/mail/?view=cm&fs=1&to=bao927471@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-violet-600 px-5 py-3 text-sm font-medium text-white transition-colors duration-200 ease-out hover:bg-violet-500"
+              className="inline-flex items-center gap-2 rounded-lg bg-emerald-500 px-5 py-3 text-sm font-semibold text-zinc-950 transition-colors duration-200 ease-out hover:bg-emerald-400 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60"
             >
               <Mail size={17} />
-              Get In Touch
+              Email Me
             </a>
 
             <button
               type="button"
               onClick={handleCopyEmail}
-              className="relative inline-flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/40 px-5 py-3 text-sm font-medium text-zinc-300 transition-[border-color,color,background-color] duration-200 ease-out hover:border-zinc-700 hover:text-white hover:bg-zinc-900/80 cursor-pointer"
+              className="relative inline-flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/40 px-5 py-3 text-sm font-medium text-zinc-300 transition-[border-color,color,background-color] duration-200 ease-out hover:border-zinc-700 hover:text-white hover:bg-zinc-900/80 cursor-pointer active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-500/60"
             >
               {copied ? (
                 <>
@@ -84,7 +82,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/nguy%E1%BB%85n-v%C4%83n-b%E1%BA%A3o-undefined-3bba0a372/"
+              href="https://www.linkedin.com/in/nguyen-van-bao-3bba0a372/"
               aria-label="LinkedIn"
               className="text-zinc-500 transition-colors duration-200 ease-out hover:text-white"
               target="_blank"
